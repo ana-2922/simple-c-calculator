@@ -24,18 +24,20 @@ int main(){
 	
 	printf("Choose 1,2,3,4 for addition, subtraction, multiplication, division);
 	scanf("%d", &operation);
+	//user must enter a number for a
 	printf("pick your first number: ");
 	if(scanf("%d", &a) ! = 1){
 		printf("error, enter a number!");
 		return 1;
 	}
+	//user must enter a number for b
 	printf("pick your second number: ");
 	if(scanf("%d", &b) ! = 1){
 		printf("error, enter a number!");
 		return 1;
 	}
 
-	
+	//makes sure the user enters a proper choice
 	if(operation < 1 || operation > 4){
 		printf("Invalid input!");
 		return 1;
