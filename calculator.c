@@ -18,18 +18,34 @@ int div(int a, int b){
 }
 
 int main(){
-	int addition;
-	int substraction;
-	int multiplication;
-	int division;
-	addition = add(1, 2);
-	subtraction = sub(3, 4);
-	multiplication = mult(5, 6);
-	division = div(7, 8);
-	printf(" 1+2= %d\n", addition);
-	printf(" 3-4= %d\n", subtraction);
-	printf(" 5*6= %d\n", multiplication);
-	printf(" 7/8= %d\n", division);
+	int a,b;
+	int operation;
+	int answer;
+	
+	printf("Choose 1,2,3,4 for addition, subtraction, multiplication, division);
+	scanf("%d", &operation);
+	printf("pick your first number: ");
+	scanf("%d", &a);
+	printf("pick your second number: ");
+	scanf("%d", &a);
+
+	if( operation == 1){
+		answer = add(a, b);
+		printf("answer: %d\n", answer);
+	}
+	else if( operation == 2){
+		answer = sub(a, b);
+		printf("answer: %d\n", answer);
+	}
+	else if( operation == 3){
+		answer = mult(a, b);
+		printf("answer: %d\n", answer);
+	}
+	else if( operation == 4){
+		answer = div(a, b);
+		printf("answer: %d\n", answer);
+	}
+
 	return 0;
 
 }
