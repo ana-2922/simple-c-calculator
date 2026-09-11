@@ -25,9 +25,21 @@ int main(){
 	printf("Choose 1,2,3,4 for addition, subtraction, multiplication, division);
 	scanf("%d", &operation);
 	printf("pick your first number: ");
-	scanf("%d", &a);
+	if(scanf("%d", &a) ! = 1){
+		printf("error, enter a number!");
+		return 1;
+	}
 	printf("pick your second number: ");
-	scanf("%d", &a);
+	if(scanf("%d", &b) ! = 1){
+		printf("error, enter a number!");
+		return 1;
+	}
+
+	
+	if(operation < 1 || operation > 4){
+		printf("Invalid input!");
+		return 1;
+	}
 
 	if( operation == 1){
 		answer = add(a, b);
